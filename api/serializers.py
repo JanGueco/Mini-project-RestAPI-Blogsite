@@ -1,7 +1,4 @@
-from asyncore import write
-from attr import field
 from rest_framework import serializers
-from blog.models import Post, Comment
 from django.contrib.auth import get_user_model, authenticate
 
 
@@ -14,7 +11,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = get_user_model()
-        fields = ["id","email", "name","password"]
+        fields = ["id","email","name","password"]
 
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
@@ -25,4 +22,5 @@ class LoginSerializer(serializers.Serializer):
         if user and user.is_active:
             return user
         raise serializers.ValidationError('Incorrect Credentials Passed.')
+    
     
