@@ -30,4 +30,3 @@ class PostDetailSerializer(serializers.ModelSerializer):
         name = obj.User_Id.name
         return name
     
-    
