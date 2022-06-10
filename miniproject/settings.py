@@ -147,4 +147,8 @@ REST_FRAMEWORK = {
     ]
 }
 
+REST_KNOX = {
+    'AUTH_HEADER_PREFIX':'Bearer',
+}
+
 
