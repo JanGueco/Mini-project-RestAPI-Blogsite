@@ -31,7 +31,7 @@ To install MySQL:
 1. Download from
   - https://www.mysql.com/downloads/
 2. Install
--  https://dev.mysql.com/doc/refman/8.0/en/installing.html(install guides)
+-  https://dev.mysql.com/doc/refman/8.0/en/installing.html  (install guides)
 
 
 ## Initialization
